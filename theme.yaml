@@ -1,0 +1,15 @@
+name: LarrysTheme
+description: 'Theme designed for Larry''s Tree Farm'
+author: 'Gavyn Leavitt'
+homepage: firearrow5235.github.com
+code: ''
+form:
+  fields:
+    site-name:
+      label: Site name
+      comment: What is your site called?
+      default: My Amazing Site!
+
+require:
+	- RainLab.Blog
+	- PeterHegman.SlickSlider

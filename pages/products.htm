@@ -1,0 +1,30 @@
+title = "Products"
+url = "/products"
+layout = "default"
+description = "Products page."
+is_hidden = 0
+==
+
+<section class="products-wrapper">
+  <a href="{{ 'products/trees'|page }}">
+    <div class="product-box">
+      <div class="product-box-zoom" style="background-image: url({{ 'trees.png'|media }})">
+        Trees
+      </div>
+    </div>
+  </a>
+  <a href="{{ 'products/greenery'|page }}">
+    <div class="product-box">
+      <div class="product-box-zoom" style="background-image: url({{ 'greenery.png'|media }})">
+        Greenery
+      </div>
+    </div>
+  </a>
+  <a href="{{ 'product/Ornaments'|page }}">
+    <div class="product-box">
+      <div class="product-box-zoom" style="background-image: url({{ 'ornaments.png'|media }})">
+        Ornaments
+      </div>
+    </div>
+  </a>
+</section>

@@ -1,0 +1,26 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Larry's Tree Farm - {{ this.page.title }}</title>
+        <link href="{{ 'assets/css/app.css'|theme }}" rel="stylesheet">
+        {% styles %}
+    </head>
+    <body>
+        <nav>
+            {% partial 'site/nav' %}
+        </nav>
+        <section id="content">
+            {% page %}
+        </section>
+        <footer>
+            {% partial 'site/footer' %}
+        </footer>
+
+        <!-- Scripts -->
+        {% scripts %}
+    </body>
+</html>
