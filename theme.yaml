@@ -11,5 +11,5 @@ form:
       default: My Amazing Site!
 
 require:
-	- RainLab.Blog
-	- PeterHegman.SlickSlider
+    - RainLab.Blog
+    - PeterHegman.SlickSlider

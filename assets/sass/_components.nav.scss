@@ -1,0 +1,52 @@
+.navbar {
+  width: 100%;
+  background-color: $background-color;
+  height: $nav-height;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  ul {
+    display: block;
+    height: $nav-height;
+    margin: 0px;
+    padding: 0px;
+    float: right;
+
+    li {
+      display: inline;
+      text-align: center;
+
+      a {
+        display: inline-block;
+        margin: auto 0;
+        width: 14rem;
+        height: $nav-height;
+        font-size: 2rem;
+        color: #FFF;
+        line-height: $nav-height;
+        text-decoration: none;
+
+        &:hover {
+          background-color: rgba(55, 55, 55, .5);
+        }
+      }
+    }
+  }
+}
+
+.navbar-brand {
+  display: inline-block;
+  margin: auto 0;
+  padding: 0 2rem;
+  height: $nav-height;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2.5rem;
+  color: #FFF;
+  line-height: $nav-height;
+  text-decoration: none;
+
+  &:hover {
+      background-color: rgba(55, 55, 55, .5)
+  }
+}

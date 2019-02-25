@@ -10,15 +10,11 @@ description = "Default layout"
         {% styles %}
     </head>
     <body>
-        <nav>
-            {% partial 'site/nav' %}
-        </nav>
-        <section id="content">
+        {% partial 'site/nav' %}
+        <section class="content-wrapper">
             {% page %}
         </section>
-        <footer>
-            {% partial 'site/footer' %}
-        </footer>
+        {% partial 'site/footer' %}
 
         <!-- Scripts -->
         {% scripts %}

@@ -1,22 +1,25 @@
-//settings
-@import "settings.variables";
+//settings - Sass Variable and Font Definitions
+@import "settings.colors";
+@import "settings.dimensions";
 @import "settings.fonts";
-//tools
 
-//generic
+//tools - Mixins and Sass Functions
+
+//generic - Normalize and Box-Sizing Definitions
 @import "generic.normalize";
 @import "generic.defaults";
 
-//elements
+//elements - Styling for HTML tags
 @import "elements.blocks";
+@import "elements.headers";
 @import "elements.text";
 
-//objects
-@import "objects.blocks";
-@import "objects.nav";
+//objects - Non-cosmetic objects i.e. wrappers
+@import "objects.wrappers";
 
-//components
-@import "components.slider";
+//components - Most Work Here. Specificity of One Class Required
 @import "components.products";
+@import "components.nav";
+@import "components.footer";
 
-//utilities
+//utilities - Overrides and Trumps

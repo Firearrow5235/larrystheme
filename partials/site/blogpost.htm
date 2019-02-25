@@ -1,0 +1,11 @@
+<section class="post">
+  <h2><a href="/post/{{ post.slug }}">{{ post.title }}</a></h2>
+  <p>{{ post.content }}</p>
+  <span class="post-info">Posted to
+    {% for category in post.categories %}
+      <a href="/category/{{category.slug}}">{{ category.name }}</a>
+      {% if not loop.last %},
+      {% endif %}
+    {% endfor %}
+    on {{ post.published_at|date('M d, Y') }}</span>
+</section>
