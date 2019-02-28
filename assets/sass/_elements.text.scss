@@ -1,6 +1,10 @@
 a {
   text-decoration: none;
-  color: #20a4f3;
+  color: $larrys-red;
+
+  &:hover {
+    color: $larrys-red-dark;
+  }
 }
 
 p {
