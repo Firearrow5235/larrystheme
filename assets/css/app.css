@@ -538,6 +538,12 @@ p {
   padding: 20rem 0;
 }
 
+/* line 20, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_objects.wrappers.scss */
+.footer-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
 .product-box {
   position: relative;
@@ -643,30 +649,26 @@ p {
 }
 
 /* line 15, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
-.footer-h {
-  display: block;
-  width: 100%;
-  padding: 5px 0;
-  font-size: 1.4rem;
-  color: #5cab7d;
+.footer-hours {
+  width: 150px;
 }
 
-/* line 23, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
-.directions {
+/* line 19, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+.footer-directions {
   width: 145px;
 }
 
-/* line 27, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+/* line 23, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
 .address {
   font-size: 1.2rem;
 }
 
-/* line 31, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+/* line 27, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
 .map {
   margin: 0 auto;
 }
 
-/* line 35, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+/* line 31, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
 .map-button {
   width: 100%;
   margin-top: 20px;
@@ -677,14 +679,19 @@ p {
   border-radius: 5px;
 }
 
-/* line 44, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+/* line 40, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
 .map-button:hover {
   background-color: #8c1c13;
 }
 
-/* line 49, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+/* line 45, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
 .map-button:hover {
   cursor: pointer;
+}
+
+/* line 49, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+.footer-contact {
+  width: 250px;
 }
 
 /* line 53, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
@@ -696,6 +703,28 @@ p {
 /* line 57, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
 .credits a {
   color: #e59400;
+}
+
+/* line 62, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+.value-pair {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 68, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+.footer-h {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.4rem;
+  color: #5cab7d;
+}
+
+/* line 76, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
+.footer-p {
+  font-size: 1.2rem;
+  line-height: 0;
 }
 
 /*# sourceMappingURL=../css/app.map */

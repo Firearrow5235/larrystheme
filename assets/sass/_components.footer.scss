@@ -12,15 +12,11 @@
   }
 }
 
-.footer-h {
-  display: block;
-  width: 100%;
-  padding: 5px 0;
-  font-size: 1.4rem;
-  color: $larrys-green-light;
+.footer-hours {
+  width: 150px;
 }
 
-.directions {
+.footer-directions {
   width: 145px;
 }
 
@@ -50,6 +46,10 @@
   cursor: pointer;
 }
 
+.footer-contact {
+  width: 250px;
+}
+
 .credits {
   width: 100%;
   text-align: center;
@@ -57,4 +57,23 @@
   a {
     color: #e59400;
   }
+}
+
+.value-pair {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-h {
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  font-size: 1.4rem;
+  color: $larrys-green-light;
+}
+
+.footer-p {
+  font-size: 1.2rem;
+  line-height: 0;
 }
