@@ -3,6 +3,7 @@
   width: 100%;
   min-height: 100vh;
   padding-top: $nav-height;
+  padding-bottom: $footer-height;
 }
 
 .content-wrapper {
@@ -20,4 +21,6 @@
 .footer-wrapper {
   display: flex;
   justify-content: space-around;
+  padding: 0px 100px;
+  padding-bottom: 10px;
 }
