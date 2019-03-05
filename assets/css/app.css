@@ -502,17 +502,27 @@ h4 {
 }
 
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
+h1 {
+  font-size: 3.2rem;
+}
+
+/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
+h2 {
+  font-size: 2.4rem;
+}
+
+/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
 a {
   text-decoration: none;
   color: #cc2936;
 }
 
-/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
+/* line 13, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
 a:hover {
   color: #8c1c13;
 }
 
-/* line 10, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
+/* line 18, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
 p {
   font-size: 1.4rem;
 }
@@ -545,35 +555,6 @@ p {
   justify-content: space-around;
   padding: 0px 100px;
   padding-bottom: 10px;
-}
-
-/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
-.product-box {
-  position: relative;
-  width: 25rem;
-  height: 25rem;
-  overflow: hidden;
-  border-radius: 1.2rem;
-}
-
-/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
-.product-box-zoom {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-position: center;
-  background-size: cover;
-  color: #FFF;
-  font-size: 3.2rem;
-  text-align: center;
-  line-height: 25rem;
-  transition: all 1;
-}
-
-/* line 22, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
-.product-box-zoom:hover, .product-box-zoom:focus {
-  box-shadow: inset 0 0 8rem 5rem #000;
-  transform: scale(1.2);
 }
 
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
@@ -634,6 +615,48 @@ p {
 /* line 49, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
 .navbar-brand:hover {
   background-color: rgba(55, 55, 55, 0.5);
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
+.product-box {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
+.product-box-zoom {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  font-size: 3.2rem;
+  text-align: center;
+  line-height: 25rem;
+  transition: all 1;
+}
+
+/* line 22, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
+.product-box-zoom:hover, .product-box-zoom:focus {
+  box-shadow: inset 0 0 8rem 5rem #000;
+  transform: scale(1.2);
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.blogpost.scss */
+.post {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.blogpost.scss */
+.post img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
 }
 
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */

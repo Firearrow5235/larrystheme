@@ -19,8 +19,9 @@
 @import "objects.wrappers";
 
 //components - Most Work Here. Specificity of One Class Required
-@import "components.products";
 @import "components.nav";
+@import "components.products";
+@import "components.blogpost";
 @import "components.footer";
 
 //utilities - Overrides and Trumps
