@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.boxsizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 4, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.boxsizing.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.defaults.scss */
+* {
+  font-family: sans-serif;
+}
+
+/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.defaults.scss */
+html {
+  font-size: 10px;
+}
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -476,26 +496,6 @@ template {
   display: none;
 }
 
-/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.boxsizing.scss */
-html {
-  box-sizing: border-box;
-}
-
-/* line 4, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.boxsizing.scss */
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.defaults.scss */
-* {
-  font-family: sans-serif;
-}
-
-/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_generic.defaults.scss */
-html {
-  font-size: 10px;
-}
-
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.headers.scss */
 h4 {
   font-size: 22px;
@@ -525,6 +525,21 @@ a:hover {
 /* line 18, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_elements.text.scss */
 p {
   font-size: 1.4rem;
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_objects.reusable.scss */
+.button {
+  min-width: 150px;
+  padding: 8px 20px;
+  color: white;
+  background-color: #cc2936;
+  border: none;
+  border-radius: 5px;
+}
+
+/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_objects.reusable.scss */
+.button:hover {
+  background-color: #8c1c13;
 }
 
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_objects.wrappers.scss */
@@ -557,106 +572,49 @@ p {
   padding-bottom: 10px;
 }
 
-/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar {
-  width: 100%;
-  background-color: #436436;
-  height: 50px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar ul {
-  display: block;
-  height: 50px;
-  margin: 0px;
-  padding: 0px;
-  float: right;
-}
-
-/* line 16, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar ul li {
-  display: inline;
-  text-align: center;
-}
-
-/* line 20, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar ul li a {
-  display: inline-block;
-  margin: auto 0;
-  width: 14rem;
-  height: 50px;
-  font-size: 2rem;
-  color: #FFF;
-  line-height: 50px;
-  text-decoration: none;
-}
-
-/* line 30, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar ul li a:hover {
-  background-color: #2b4023;
-}
-
-/* line 38, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar-brand {
-  display: inline-block;
-  margin: auto 0;
-  padding: 0 2rem;
-  height: 50px;
-  font-family: "Berkshire Swash", cursive;
-  font-size: 2.5rem;
-  color: #FFF;
-  line-height: 50px;
-  text-decoration: none;
-}
-
-/* line 49, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
-.navbar-brand:hover {
-  background-color: rgba(55, 55, 55, 0.5);
-}
-
-/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
-.product-box {
-  position: relative;
-  width: 25rem;
-  height: 25rem;
-  overflow: hidden;
-  border-radius: 1.2rem;
-}
-
-/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
-.product-box-zoom {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  background-position: center;
-  background-size: cover;
-  color: #FFF;
-  font-size: 3.2rem;
-  text-align: center;
-  line-height: 25rem;
-  transition: all 1;
-}
-
-/* line 22, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
-.product-box-zoom:hover, .product-box-zoom:focus {
-  box-shadow: inset 0 0 8rem 5rem #000;
-  transform: scale(1.2);
-}
-
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.blogpost.scss */
 .post {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 60px 20px 60px;
 }
 
-/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.blogpost.scss */
+/* line 6, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.blogpost.scss */
 .post img {
   display: block;
   width: 70%;
   margin: 0 auto;
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.contactform.scss */
+.form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 5, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.contactform.scss */
+.form input {
+  width: 50%;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+/* line 10, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.contactform.scss */
+.form input[type="submit"] {
+  display: block;
+  width: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 18, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.contactform.scss */
+.form textarea {
+  width: 100%;
+  max-width: 100%;
+  height: 250px;
+  margin-bottom: 15px;
+  padding: 7px;
+  font-size: 1.4rem;
 }
 
 /* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.footer.scss */
@@ -761,6 +719,124 @@ p {
 .footer-p {
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar {
+  width: 100%;
+  background-color: #436436;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar ul {
+  display: block;
+  height: 50px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+}
+
+/* line 16, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar ul li {
+  display: inline;
+  text-align: center;
+}
+
+/* line 20, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar ul li a {
+  display: inline-block;
+  margin: auto 0;
+  width: 14rem;
+  height: 50px;
+  font-size: 2rem;
+  color: #FFF;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+/* line 30, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar ul li a:hover {
+  background-color: #2b4023;
+}
+
+/* line 38, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar-brand {
+  display: inline-block;
+  margin: auto 0;
+  padding: 0 2rem;
+  height: 50px;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 2.5rem;
+  color: #FFF;
+  line-height: 50px;
+  text-decoration: none;
+}
+
+/* line 49, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.nav.scss */
+.navbar-brand:hover {
+  color: #FFF;
+  background-color: #2b4023;
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.postlist.scss */
+.post-list {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px 20px 60px;
+  border-top: 1px solid #436436;
+}
+
+/* line 7, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.postlist.scss */
+.post-list img {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* line 14, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.postlist.scss */
+.pagination {
+  display: block;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 20, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.postlist.scss */
+.pagination li {
+  display: inline;
+}
+
+/* line 1, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
+.product-box {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 1.2rem;
+}
+
+/* line 9, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
+.product-box-zoom {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-position: center;
+  background-size: cover;
+  color: #FFF;
+  font-size: 3.2rem;
+  text-align: center;
+  line-height: 25rem;
+  transition: all 1;
+}
+
+/* line 22, /home/silverhawk/Websites/larrystreefarm/themes/larrystheme/assets/sass/_components.products.scss */
+.product-box-zoom:hover, .product-box-zoom:focus {
+  box-shadow: inset 0 0 8rem 5rem #000;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=../css/app.map */

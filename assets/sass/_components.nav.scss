@@ -47,6 +47,7 @@
   text-decoration: none;
 
   &:hover {
-      background-color: rgba(55, 55, 55, .5)
+    color: #FFF;
+    background-color: $larrys-green-dark;
   }
 }

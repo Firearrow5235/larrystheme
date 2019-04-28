@@ -6,9 +6,9 @@
 //tools - Mixins and Sass Functions
 
 //generic - Normalize and Box-Sizing Definitions
-@import "generic.normalize";
 @import "generic.boxsizing";
 @import "generic.defaults";
+@import "generic.normalize";
 
 //elements - Styling for HTML tags
 @import "elements.blocks";
@@ -16,12 +16,15 @@
 @import "elements.text";
 
 //objects - Non-cosmetic objects i.e. wrappers
+@import "objects.reusable";
 @import "objects.wrappers";
 
 //components - Most Work Here. Specificity of One Class Required
-@import "components.nav";
-@import "components.products";
 @import "components.blogpost";
+@import "components.contactform";
 @import "components.footer";
+@import "components.nav";
+@import "components.postlist";
+@import "components.products";
 
 //utilities - Overrides and Trumps

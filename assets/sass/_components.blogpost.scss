@@ -1,6 +1,7 @@
 .post {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 ($content-width * .05) 20px ($content-width * .05);
 
   img {
     display: block;
