@@ -5,51 +5,60 @@ function onStart()
 }
 ==
 <footer class="footer">
-  <div class="footer-wrapper">
-    <div class="footer-hours">
-      <span class="footer-h">Hours</span>
-      <div class="value-pair">
-        <span class="footer-p">Monday</span><span class="footer-p">Closed</span>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <span class="footer-h">Hours</span>
+        <div class="value-pair">
+          <span class="footer-p">Monday</span><span class="footer-p">Closed</span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Tuesday</span><span class="footer-p">Closed</span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Wednesday</span><span class="footer-p">Closed</span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Thursday</span><span class="footer-p">Closed</span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Friday</span><span class="footer-p">Closed</span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Saturday</span><span class="footer-p">Closed</span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Sunday</span><span class="footer-p">Closed</span>
+        </div>
       </div>
-      <div class="value-pair">
-        <span class="footer-p">Tuesday</span><span class="footer-p">Closed</span>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <span class="footer-h">Address</span>
+        <span class="footer-p address-line">336 Vermont Route 108</span>
+        <span class="footer-p address-line">Bakersfield, VT 05441</span>
+        <button class="map-button" onclick="mapsSelector()">Directions?</button>
       </div>
-      <div class="value-pair">
-        <span class="footer-p">Wednesday</span><span class="footer-p">Closed</span>
+      <div class="col-lg-3 col-md-4">
+        <span class="footer-h">Contact Us</span>
+        <div class="value-pair">
+          <span class="footer-p">Phone</span><span class="footer-p"><a href="tel:802-827-6123">(802)827-6123</a></span>
+        </div>
+        <div class="value-pair">
+          <span class="footer-p">Email</span><span class="footer-p">contact@larrystreefarm.com</span>
+        </div>
       </div>
-      <div class="value-pair">
-        <span class="footer-p">Thursday</span><span class="footer-p">Closed</span>
+      <div class="col-lg-1 d-none d-lg-block">
+        <span class="footer-h">Links</span>
+        <a href="{{ 'home'|page }}">Home</a><br/>
+        <a href="{{ 'products'|page }}">Products</a><br/>
+        <a href="{{ 'contact'|page }}">Contact</a><br/>
       </div>
-      <div class="value-pair">
-        <span class="footer-p">Friday</span><span class="footer-p">Closed</span>
-      </div>
-      <div class="value-pair">
-        <span class="footer-p">Saturday</span><span class="footer-p">Closed</span>
-      </div>
-      <div class="value-pair">
-        <span class="footer-p">Sunday</span><span class="footer-p">Closed</span>
-      </div>
+      <div class="col-lg-2"></div>
     </div>
-    <div class="footer-directions">
-      <span class="footer-h">Address</span>
-      <span class="footer-p">336 Vermont Route 108</span><span class"footer-p">Bakersfield, VT 05441</span>
-      <button class="map-button" onclick="mapsSelector()">Directions?</button>
-    </div>
-    <div class="footer-contact">
-      <span class="footer-h">Contact Us</span>
-      <div class="value-pair">
-        <span class="footer-p">Phone</span><span class="footer-p">(802)827-6123</span>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="credits">Larry's Tree Farm &copy; {{ "now"|date("Y") }}</div>
       </div>
-      <div class="value-pair">
-        <span class="footer-p">Email</span><span class="footer-p">contact@larrystreefarm.com</span>
-      </div>
-    </div>
-    <div class="footer-links">
-      <span class="footer-h">Links</span>
-      <a href="{{ 'home'|page }}">Home</a><br/>
-      <a href="{{ 'products'|page }}">Products</a><br/>
-      <a href="{{ 'contact'|page }}">Contact</a><br/>
     </div>
   </div>
-  <div class="credits">Larry's Tree Farm &copy {{ "now"|date("Y") }}</div>
 </footer>

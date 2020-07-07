@@ -1,0 +1,18 @@
+// main: app.scss
+
+#submit-wrapper-contactForm {
+  text-align: center;
+}
+
+.button {
+  width: 200px;
+  padding: 8px;
+  color: white;
+  background-color: $larrys-red;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $larrys-red-dark;
+  }
+}

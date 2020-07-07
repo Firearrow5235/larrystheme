@@ -5,19 +5,33 @@ description = "Home page of the website."
 is_hidden = 0
 
 [slider]
-slide_show_id = 1
-
-[blogPost]
+[JanVince\SmallContactForm\Components\SmallContactForm contactForm]
 ==
-<?
+<?php
   use RainLab\Blog\Models\Post;
 
   function onStart()
   {
     $this['latestPost'] = Post::latest()->first();
   }
-?>
+  ?>
 ==
 {% component 'slider' %}
-<h1>Latest News</h1>
-{% component 'blogPost' slug=latestPost.slug %}
+<h1 id="news">Latest News</h1>
+{% partial 'site/blogPost' post=latestPost %}
+<h1 id="products">Our Products</h1>
+<div class="container">
+  <div class="row">
+    <h2>Trees</h2>
+  </div>
+  <div class="row">
+    <h2>Greenery</h2>
+  </div>
+  <div class="row">
+    <h2>Decorations</h2>
+  </div>
+</div>
+<h1 id="contact">Contact Us</h1>
+<div class="post">
+  {% component('contactForm') %}
+</div>

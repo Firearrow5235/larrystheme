@@ -1,53 +1,74 @@
+// main: app.scss
+
 .navbar {
-  width: 100%;
+  //width: 100%;
   background-color: $larrys-green;
-  height: $nav-height;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+  border-bottom: 1px solid black;
+  min-height: $nav-height;
+  padding: 0px;
+  //position: fixed;
+  //top: 0;
+  //z-index: 10;
 
-  ul {
-    display: block;
+  .nav-link {
+    //display: inline-block;
+    //margin: auto 0;
+    min-width: 14rem;
     height: $nav-height;
-    margin: 0px;
-    padding: 0px;
-    float: right;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: #FFF;
+    line-height: $nav-height;
+    text-align: center;
+    //text-decoration: none;
 
-    li {
-      display: inline;
-      text-align: center;
-
-      a {
-        display: inline-block;
-        margin: auto 0;
-        width: 14rem;
-        height: $nav-height;
-        font-size: 2rem;
-        color: #FFF;
-        line-height: $nav-height;
-        text-decoration: none;
-
-        &:hover {
-          background-color: $larrys-green-dark;
-        }
-      }
+    &:hover {
+      background-color: $larrys-green-dark;
     }
+  }
+
+  .collapsing {
+    .nav-link {
+      text-align: left;
+    }
+  }
+
+  .show {
+    .nav-link {
+      text-align: left;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $larrys-green;
+  }
+
+  .dropdown-item {
+    padding-left: 4rem;
   }
 }
 
 .navbar-brand {
-  display: inline-block;
-  margin: auto 0;
+  //display: inline-block;
+  //margin: auto 0;
   padding: 0 2rem;
   height: $nav-height;
   font-family: "Berkshire Swash", cursive;
   font-size: 2.5rem;
   color: #FFF;
   line-height: $nav-height;
-  text-decoration: none;
+  //text-decoration: none;
 
   &:hover {
     color: #FFF;
     background-color: $larrys-green-dark;
   }
+}
+
+.navbar-toggler {
+  height: $nav-height;
+}
+
+.hamburger-menu {
+  fill: #FFF;
 }

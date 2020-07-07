@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
   <a class="navbar-brand" href="{{ 'home'|page }}">Larry's Tree Farm</a>
   <ul>
       <li><a href="{{ 'home'|page }}">Home</a></li>
@@ -6,4 +6,27 @@
       <li><a href="/category/news">News</a></li>
       <li><a href="{{ 'contact'|page }}">Contact</a></li>
   </ul>
+</nav>
+-->
+
+<nav class="navbar fixed-top navbar-expand-lg">
+  <a class="navbar-brand mr-0" href="{{ 'home'|page }}">Larry's Tree Farm</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="hamburger-menu">
+      <svg viewBox="0 0 90 90" width="35" height="35">
+          <rect width="90" height="14" rx="8"></rect>
+          <rect y="35" width="90" height="14" rx="8"></rect>
+          <rect y="70" width="90" height="14" rx="8"></rect>
+      </svg>
+    </span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="navbar-nav ml-auto">
+        <a class="nav-item nav-link text-lg-center" href="#news">Home</a>
+        <a class="nav-item nav-link text-lg-center" href="#products">Products</a>
+        <a class="nav-item nav-link text-lg-center" href="#news">News</a>
+        <a class="nav-item nav-link text-lg-center" href="#contact">Contact</a>
+    </div>
+  </div>
 </nav>

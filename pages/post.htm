@@ -13,7 +13,8 @@ function onEnd()
 ?>
 ==
 {% if post %}
-  {% partial 'site/blogpost' post=post %}
+  <h1>{{ post.title }}</h1>
+  {% component 'blogPost' %}
 {% else %}
   <h1>Post not found</h1>
 {% endif %}

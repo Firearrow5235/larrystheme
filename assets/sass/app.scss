@@ -14,17 +14,19 @@
 @import "elements.blocks";
 @import "elements.headers";
 @import "elements.text";
+@import "elements.input";
 
 //objects - Non-cosmetic objects i.e. wrappers
-@import "objects.reusable";
+//@import "objects.reusable";
 @import "objects.wrappers";
+@import "objects.input";
 
 //components - Most Work Here. Specificity of One Class Required
 @import "components.blogpost";
-@import "components.contactform";
+//@import "components.contactform";
 @import "components.footer";
 @import "components.nav";
-@import "components.postlist";
+//@import "components.postlist";
 @import "components.products";
 
 //utilities - Overrides and Trumps

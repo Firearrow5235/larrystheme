@@ -1,14 +1,15 @@
+// main: app.scss
+
 .page-wrapper {
-  position: relative;
-  width: 100%;
   min-height: 100vh;
+  position: relative;
   padding-top: $nav-height;
   padding-bottom: $footer-height;
 }
 
 .content-wrapper {
-  width: $content-width;
   margin: 0 auto;
+  width: $content-width;
 }
 
 
